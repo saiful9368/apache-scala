@@ -10,3 +10,17 @@ return "you are a senior"
 }}
 var a=readInt()
 println(s"Hello $name ,"+greet(a))
+
+
+scala> val splitpizza="Pizza Dough, Tomato sauce, Cheese, Topping of choice".split(",")
+val splitpizza: Array[String] = Array(Pizza Dough, " Tomato sauce", " Cheese", " Topping of choice")
+
+scala> splitPizza.foreach(println)
+       ^
+       error: not found: value splitPizza
+
+scala> splitpizza.foreach(println)
+Pizza Dough
+ Tomato sauce
+ Cheese
+ Topping of choice
