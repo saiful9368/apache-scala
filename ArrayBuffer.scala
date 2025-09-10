@@ -54,3 +54,40 @@ myy_arraybuff.foreach(println)
 78
 import scala.collection.mutable.ArrayBuffer
 var myy_arraybuff: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(6, 15, 78)
+
+
+scala> :paste
+// Entering paste mode (ctrl-D to finish)
+
+myy_arraybuff+=6
+myy_arraybuff+=15
+myy_arraybuff+=78
+myy_arraybuff+=4
+myy_arraybuff.foreach(println)
+println("--------")
+myy_arraybuff-=4
+myy_arraybuff.foreach(println)
+println("--------")
+myy_arraybuff.remove(0)
+myy_arraybuff.foreach(println)
+println("--------")
+myy_arraybuff.clear()
+myy_arraybuff.foreach(println)
+println("--------")
+
+
+// Exiting paste mode, now interpreting.
+
+6
+15
+78
+4
+--------
+6
+15
+78
+--------
+15
+78
+--------
+--------
